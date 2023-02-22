@@ -12,6 +12,7 @@ public class AppTest {
 
     @Test
 public void appTest(){
+        System.out.println("1.0");
         SqlSession sqlSession = SqlSessionUtil.openSession();
         Car car = new Car(null, 11, "奔驰", 20.00, "2023-01-07", "燃油车");
         sqlSession.insert("ins",car);
